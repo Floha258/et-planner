@@ -1,0 +1,22 @@
+{
+  "title": "IEvent",
+  "type": "object",
+  "properties": {
+    "eventName": {
+      "type": "string"
+    },
+    "date": {
+	  "description": "Date in this case refers to the date and time",
+      "type": "Date"
+    },
+    "place": {
+      "type": "string"
+    },
+
+    "room": {
+      "type": "Room[]"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["eventName", "date", "place"]
+}

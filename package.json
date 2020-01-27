@@ -1,0 +1,69 @@
+{
+  "name": "et-planner",
+  "version": "0.9",
+  "private": false,
+  "contributors": [
+    "Florian Hammerschmitt",
+    "Alexander Mohr",
+    "Sebastian Cartarius",
+    "Romeo Amouh",
+    "Kevin Marger"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floha258/et-planner.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "typeschemas": "node script/typeschemas.js",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/free-regular-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.1.0",
+    "core-js": "^3.3.2",
+    "csv-parse": "latest",
+    "json-schema-to-typescript": "^8.0.0",
+    "jspdf": "^1.5.3",
+    "jspdf-autotable": "^3.2.11",
+    "konva": "^4.0.18",
+    "konva-node": "^0.11.1",
+    "papaparse": "latest",
+    "pdfmake": "^0.1.63",
+    "v-click-outside": "latest",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-konva": "^2.1.1",
+    "vue-material": "^1.0.0-beta-11",
+    "vue-property-decorator": "^8.3.0",
+    "deep-equal": "latest"
+  },
+  "devDependencies": {
+    "@types/csv-parse": "^1.2.2",
+    "@types/deep-equal": "^1.0.1",
+    "@types/jest": "^24.0.19",
+    "@types/jspdf": "^1.3.3",
+    "@types/papaparse": "^5.0.2",
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-typescript": "^4.1.0",
+    "@vue/cli-plugin-unit-jest": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.30",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jest": "^24.9.0",
+    "typescript": "~3.5.3",
+    "vue-jest": "^3.0.5",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

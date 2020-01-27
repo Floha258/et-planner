@@ -1,0 +1,138 @@
+{
+  "title": "JSONevent",
+  "type": "object",
+  "properties": {
+    "eventname": {
+      "type": "string"
+    },
+    "date": {
+      "type": "Date"
+    },
+    "place": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "array",
+      "properties": {
+        "roomname": {
+          "type": "string"
+        },
+        "roomid": {
+          "type": "number"
+        },
+        "tables": {
+          "type": "array",
+          "properties": {
+            "shape": {
+              "type": "string"
+            },
+            "tableid": {
+              "type": "number"
+            },
+            "roomid": {
+              "type": "number"
+            },
+            "positionx": {
+              "type": "number"
+            },
+            "positiony": {
+              "type": "number"
+            },
+            "rotation": {
+              "type": "number"
+            },
+            "scalex": {
+              "type": "number"
+            },
+            "scaley": {
+              "type": "string"
+            },
+            "tablename": {
+              "type": "string"
+            },
+            "seats": {
+              "type": "array",
+              "properties": {
+                "seatnumber": {
+                  "type": "number"
+                },
+                "tableid": {
+                  "type": "number"
+                },
+                "positionx": {
+                  "type": "number"
+                },
+                "positiony": {
+                  "type": "number"
+                },
+                "rotation": {
+                  "type": "number"
+                },
+                "personid": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "properties": {
+        "groupid": {
+          "type": "number"
+        },
+        "members": {
+          "type": "number[]"
+        },
+        "groupname": {
+          "type": "string"
+        }
+      }
+    },
+    "guests": {
+      "type": "array",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "birthdate": {
+          "type": "date"
+        },
+        "seatid": {
+          "type": "number"
+        },
+        "tableid": {
+          "type": "number"
+        },
+        "groupids": {
+          "type": "number[]"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "comments": {
+          "type": "string"
+        },
+        "attendance": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["eventname", "date", "place", "rooms"]
+}
